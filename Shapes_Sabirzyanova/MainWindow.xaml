@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Shapes_Sabirzyanova"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Практическая работа 7" Height="450" Width="600" MinHeight="450" MinWidth="600">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Button Margin="60,10,60,10" Click="DrawCircle_Click" Content="Нарисовать окружность"/>
+        <Button Margin="60,10,60,10" Click="DrawTriangle_Click" Content="Нарисовать треугольник" Grid.Row="1"/>
+        <Button Margin="60,10,60,9" Click="Clear_Click" Content="Очистить" Grid.Row="2"/>
+        <Canvas x:Name="Canvas" ClipToBounds="True" Grid.Row="3" Margin="10,10,10,10" Background="white"/>
     </Grid>
 </Window>
