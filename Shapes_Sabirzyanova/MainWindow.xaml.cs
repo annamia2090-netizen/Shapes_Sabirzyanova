@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Shapes_Sabirzyanova.Classes;
 
 namespace Shapes_Sabirzyanova
 {
@@ -23,6 +24,22 @@ namespace Shapes_Sabirzyanova
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void DrawCircle_Click(object sender, RoutedEventArgs e)
+        {
+            Circle circle = new Circle(50,50,90);
+            circle.Draw(Canvas);
+        }
+
+        private void DrawTriangle_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Clear_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
