@@ -23,7 +23,7 @@ namespace Shapes_Sabirzyanova.Classes
             Ellipse ellipse = new Ellipse();
             ellipse.Width = this.Diameter;
             ellipse.Height = this.Diameter;
-            ellipse.Stroke = Brushes.DeepPink;
+            ellipse.Stroke = Brushes.HotPink;
             ellipse.StrokeThickness = 2;
             ellipse.Fill = Brushes.LightPink;
             Canvas.SetLeft(ellipse, this.X -  this.Radius);

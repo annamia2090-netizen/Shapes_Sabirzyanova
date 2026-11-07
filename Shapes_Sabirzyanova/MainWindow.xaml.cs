@@ -34,12 +34,13 @@ namespace Shapes_Sabirzyanova
 
         private void DrawTriangle_Click(object sender, RoutedEventArgs e)
         {
-
+            Triangle triangle = new Triangle(170,40,120,140,220,140);
+            triangle.Draw(Canvas);
         }
 
         private void Clear_Click(object sender, RoutedEventArgs e)
         {
-
+            Canvas.Children.Clear();
         }
     }
 }
